@@ -1,0 +1,20 @@
+root: index
+format: jb-book
+chapters:
+- file: dei
+- file: overview
+- file: outline
+- file: setup
+- file: introduction/pages/introduction.md
+  sections:
+  - file: introduction/pages/introduction_1.md
+- file: experimentation/pages/experimentation.md
+  sections:
+  - file: experimentation/pages/experimentation_1.md
+- file: finalization/pages/finalization.md
+  sections:
+  - file: finalization/pages/finalization_1.md
+- file: projects
+- file: break
+- file: questionnaires
+- file: CoC
