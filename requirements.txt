@@ -145,9 +145,6 @@ pyglet==1.5.27
 Pygments==2.17.2
 pyparsing==3.1.1
 pypi-search==2.0
-PyQt5==5.15.10
-PyQt5-Qt5==5.15.14
-PyQt5-sip==12.13.0
 pyserial==3.5
 python-bidi==0.4.2
 python-dateutil==2.8.2
