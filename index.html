@@ -1,0 +1,696 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Welcome! &#8212; course_name</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Diversity, Equity and Inclusion" href="dei.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/course_name_logo.png" class="logo__image only-light" alt="course_name - Home"/>
+    <script>document.write(`<img src="_static/course_name_logo.png" class="logo__image only-dark" alt="course_name - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Welcome!
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="dei.html">Diversity, Equity and Inclusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Course overview &amp; procedure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outline.html">General outline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup for the course</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="introduction/pages/introduction.html">Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction/pages/introduction_1.html">Introduction - 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="experimentation/pages/experimentation.html">Experimentation</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="experimentation/pages/experimentation_1.html">Experimentation - 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="finalization/pages/finalization.html">Finalization</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="finalization/pages/finalization_1.html">Finalization - 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">Student projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="break.html">Yoga and/or dance break</a></li>
+<li class="toctree-l1"><a class="reference internal" href="questionnaires.html">Questionnaire templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CoC.html">Code of Conduct</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/spark-csd/course_name" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/spark-csd/course_name/edit/main/course/index.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/spark-csd/course_name/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/index.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Welcome!</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-name">course_name</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-ve-got-a-question">I’ve got a question!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgements">Acknowledgements</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <img align="right" src="https://raw.githubusercontent.com/spark-csd/course_name_repo/main/lecture/static/course_name_repo_logo.png" alt="logo" title="logo" width="400" height="300" />
+<section class="tex2jax_ignore mathjax_ignore" id="welcome">
+<h1>Welcome!<a class="headerlink" href="#welcome" title="Permalink to this heading">#</a></h1>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These pages are currently under construction and will be updated continuously.
+Please visit these pages again in the next few weeks for further information.</p>
+</div>
+</aside>
+<br/>
+<p>Hello everyone and welcome to the course page for “course_name”, taught within the <span class="xref myst">add program name</span> at <a class="reference external" href="https://www.northwestern.edu/">Northwestern University</a> during the course_term_year. We’re glad to see you here!</p>
+<br/>
+<p><a class="reference external" href="https://spark-csd.github.io/course_name_repo/index.html"><img alt="Jupyter Book Badge" src="https://jupyterbook.org/badge.svg" /></a>
+<a class="reference external" href="https://mybinder.org/v2/gh/spark-csd/mybinder_course_name_repo/HEAD"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
+<a class="reference external" href="https://hub.docker.com/r/spark-csd/course_name_repo"><img alt="Docker Hub" src="https://img.shields.io/docker/pulls/spark-csd/course_name_repo" /></a>
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/spark-csd/course_template" />
+<a class="reference external" href="https://github.com/spark-csd/course_name_repo"><img alt="GitHub issues" src="https://img.shields.io/github/issues/spark-csd/course_name_repo?style=plastic" /></a>
+<a class="reference external" href="https://github.com/spark-csd/course_name_repo/pulls"><img alt="GitHub PR" src="https://img.shields.io/github/issues-pr/spark-csd/course_name_repo" /></a>
+<a class="reference external" href="https://github.com/spark-csd/course_name_repo"><img alt="License" src="https://img.shields.io/github/license/spark-csd/course_name_repo" /></a></p>
+<div style="text-align: justify"> 
+<p>Within these pages, we provide all the information important to follow and conduct the course, including formal aspects, requirements, lecture materials, practicals and so on.  This <a class="reference external" href="https://jupyterbook.org/intro.html">jupyter book</a> will include the used slides and code in a way that they can be explored in an interactive manner. You can navigate through the respective sections via the TOC on the left side and within sections via the TOC on the right side. The three symbols in the top allow to enable full screen mode, link to the underlying <span class="xref myst">Github repository</span> and allow you to download the contents as a pdf or <a class="reference external" href="https://jupyter.org/">jupyter notebook</a> respectively. Some sections will additionally have a little rocket in that row which will allow you to interactively rerun certain parts of the practicals via cloud computing. Additionally, we support public reviews and comments through an <a class="reference external" href="https://web.hypothes.is/">hypothes.is</a> plugin with which you can interact on the right side. All of this awesomeness (talking about the infrastructure and resource) is possible through the dedicated and second to none work of the <a class="reference external" href="https://jupyter.org/">Jupyter community</a>, specifically, the <a class="reference external" href="https://executablebooks.org/en/latest/">Executable/Jupyter Book</a> and <a class="reference external" href="https://mybinder.org/">mybinder project</a>.</p>
+ </div>
+<section id="course-name">
+<h2>course_name<a class="headerlink" href="#course-name" title="Permalink to this heading">#</a></h2>
+<p>Course description and rationale/motivation.</p>
+<p align="center"><iframe src="https://giphy.com/embed/sgZdwNkOH43wZOEUJ2" width="240" height="240" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/parksandrec-episode-9-parks-and-recreation-rec-sgZdwNkOH43wZOEUJ2"><small>via GIPHY</small></a></p></p>
+<p>Traditionally, one way of achieving this is to familiarize students with all parts of the respective processes early on in their studies with an application to real-world problems and questions. More precisely, folks conduct several experiments, provided and self-chosen, within which they perform all or most of the necessary steps of the corresponding research workflow themselves, both in a guided and independent manner. Importantly, all of this will be conducted based on <a class="reference external" href="https://en.wikipedia.org/wiki/Open_science">open science principles</a>. This has several important reasons: addressing the faulty direction science and academia in via changing incentive structures (<a class="reference external" href="https://en.wikipedia.org/wiki/Open-notebook_science">open methodology</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Open_data">open data</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Open_access">open access</a>,<a class="reference external" href="https://en.wikipedia.org/wiki/Open_peer_review">open peer review</a>), enable students to become active and self-sufficient parts of the research and scientific community via the sole utilization of <a class="reference external" href="https://en.wikipedia.org/wiki/Open_source">open-source software</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Open_educational_resources">open educational resources</a>, as well as increasing the <a class="reference external" href="https://www.psychologicalscience.org/observer/words-to-action">diversity and inclusivity of science and academia</a> via the diminution of hurdles and barriers: science by everyone for everyone in an open and welcoming manner.</p>
+<p align="center"><iframe src="https://giphy.com/embed/1oIlL0oaAXUJz2xR4o" width="440" height="140" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/mostexpensivest-viceland-most-expensivest-1oIlL0oaAXUJz2xR4o"><small>via GIPHY</small></a></p></p>
+<p>As you can see in the <code class="docutils literal notranslate"><span class="pre">TOC</span></code> on the left sidebar, there’s quite a bunch going on here. You may ask: “Oh my, is all of this really necessary?”. Well, it might depend on who you ask but this course and the people conducting it think so and here’s why: creating a structured and holistic way to empirically train students via a complex framework needs time, effort, details, and dedication. Additionally, to increase openness and sustainability, and thus ultimately the success rate of projects, these things need to be prepared and supplied in a way that is findable, accessible, interoperable and re-usable (<a class="reference external" href="https://en.wikipedia.org/wiki/FAIR_data">FAIR</a>) for as many people as possible.
+This course is therefore designed to provide only <code class="docutils literal notranslate"><span class="pre">FAIR</span></code> content and materials.</p>
+<p>You can use the following sections to navigate through the content of the course:</p>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-3 docutils">
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>Overview &amp; procedure</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png"><img alt="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" src="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" style="height: 100px;" /></a>
+<p class="sd-card-text">What’s this course about?.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this section <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://spark-csd.github.io/course_name_repo/overview.html"></a></div>
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>General outline</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png"><img alt="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" src="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" style="height: 100px;" /></a>
+<p class="sd-card-text">What aspects are taught?</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this section <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://spark-csd.github.io/course_name_repo/outline.html"></a></div>
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>Course setup</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://spark-csd.github.io/course_name_repo/static/course_graphics/computing_env.png"><img alt="https://spark-csd.github.io/course_name_repo/static/course_graphics/computing_env.png" src="https://spark-csd.github.io/course_name_repo/static/course_graphics/computing_env.png" style="height: 100px;" /></a>
+<p class="sd-card-text">Getting ready for the course.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this section <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://spark-csd.github.io/course_name_repo/setup.html"></a></div>
+</div>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-3 docutils">
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>Introduction</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png"><img alt="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" src="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" style="height: 100px;" /></a>
+<p class="sd-card-text">Short description of introduction.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this section <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://spark-csd.github.io/course_name_repo/introduction/introduction.html"></a></div>
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>Experimentation</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png"><img alt="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" src="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" style="height: 100px;" /></a>
+<p class="sd-card-text">Short description of experimentation.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this section <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://spark-csd.github.io/course_name_repo/experimentation/experimentation.html"></a></div>
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>Finalization</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png"><img alt="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" src="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" style="height: 100px;" /></a>
+<p class="sd-card-text">Short description of finalization.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this section <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://spark-csd.github.io/course_name_repo/finalization/finalization.html"></a></div>
+</div>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-3 docutils">
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>Projects</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png"><img alt="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" src="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" style="height: 100px;" /></a>
+<p class="sd-card-text">The projects of the participants.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this section <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://spark-csd.github.io/course_name_repo/projects.html"></a></div>
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>Questionnaires</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png"><img alt="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" src="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" style="height: 100px;" /></a>
+<p class="sd-card-text">Course content evaluation.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this section <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://spark-csd.github.io/course_name_repo/questionnaires.html"></a></div>
+<div class="sd-card sd-sphinx-override sd-m-3 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-header bg-light text-center docutils">
+<p class="sd-card-text"><strong>Code of Conduct</strong></p>
+</div>
+<div class="sd-card-body text-center docutils">
+<a class="reference internal image-reference" href="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png"><img alt="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" src="https://spark-csd.github.io/course_name_repo/static/course_graphics/course_outline.png" style="height: 100px;" /></a>
+<p class="sd-card-text">The CoC of this course.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Explore this section <span class="fas fa-arrow-right"></span></p>
+</div>
+<a class="sd-stretched-link reference external" href="https://spark-csd.github.io/course_name_repo/CoC.html"></a></div>
+</div>
+</section>
+<section id="i-ve-got-a-question">
+<h2>I’ve got a question!<a class="headerlink" href="#i-ve-got-a-question" title="Permalink to this heading">#</a></h2>
+<p>In case you have any questions or difficulties with the lecture and its materials, please don’t hesitate a single second to get in touch. A great way to do this is to <a class="reference external" href="https://github.com/spark-csd/course_name_repo/issues">open an issue</a> on the
+GitHub site of the course. Every feedback or idea or you might have is also highly appreciated and valued.</p>
+<p align="center"><iframe src="https://giphy.com/embed/ATt7p8OO4mvvO" width="440" height="140" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/photos-street-sesame-ATt7p8OO4mvvO"><small>via GIPHY</small></a></p></p>
+</section>
+<section id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this heading">#</a></h2>
+<p>Provide acknowledgements, ie funding sources and people involved in creating the course.</p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="dei.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Diversity, Equity and Inclusion</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-name">course_name</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-ve-got-a-question">I’ve got a question!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgements">Acknowledgements</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By author_name
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright copyright_year.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
